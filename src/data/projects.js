@@ -44,7 +44,7 @@ export const projects = [
     description:
       'A modern weather app with real-time weather, hourly and weekly forecasts, city search, and clean responsive UI.',
     logo: '/logos/react_icon.svg',
-    link: 'https://www.geeksforgeeks.org/profile/nandannab6w9',
+    link: 'https://sky-cast-rosy.vercel.app',
     slug: 'skycast',
   },
 ];
