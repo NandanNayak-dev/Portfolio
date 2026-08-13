@@ -37,6 +37,8 @@ export const projects = [
       'A responsive tool that demonstrates sorting algorithms step-by-step with adjustable array sizes and speed.',
     logo: '/logos/js_icon.svg',
     link: 'https://nandannayak-dev.github.io/Sorting-Visualizer/',
+    secondaryLink: 'https://3-d-sort.vercel.app/',
+    secondaryLinkLabel: 'View 3D Version (by Google Stitch)',
     slug: 'sorting-visualizer',
   },
   {

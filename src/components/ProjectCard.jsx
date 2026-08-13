@@ -4,10 +4,7 @@ import styles from '@/styles/ProjectCard.module.css';
 
 const ProjectCard = ({ project, index }) => {
   return (
-    <a
-      href={project.link}
-      target="_blank"
-      rel="noopener noreferrer"
+    <div
       className={styles.card}
     >
       <div className={styles.number}>
@@ -33,13 +30,19 @@ const ProjectCard = ({ project, index }) => {
         </div>
 
         <div className={styles.action}>
-          <span className={styles.link}>
+          <a href={project.link} target="_blank" rel="noopener noreferrer" className={styles.link}>
             View Project
             <VscLinkExternal size={12} />
-          </span>
+          </a>
+          {project.secondaryLink && (
+            <a href={project.secondaryLink} target="_blank" rel="noopener noreferrer" className={styles.link} style={{marginLeft: '16px'}}>
+              {project.secondaryLinkLabel || 'Secondary Link'}
+              <VscLinkExternal size={12} />
+            </a>
+          )}
         </div>
       </div>
-    </a>
+    </div>
   );
 };
 
