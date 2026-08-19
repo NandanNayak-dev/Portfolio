@@ -14,7 +14,7 @@ const contactItems = [
   {
     social: 'linkedin',
     link: 'nandan-nayak',
-    href: 'https://linkedin.com/in/nandan-nayak',
+    href: 'https://www.linkedin.com/in/nandan-nayak-95b09b386',
   },
   {
     social: 'leetcode',
