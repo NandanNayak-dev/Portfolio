@@ -49,4 +49,13 @@ export const projects = [
     link: 'https://sky-cast-rosy.vercel.app',
     slug: 'skycast',
   },
+  {
+    title: 'Audiowave',
+    description:
+      'Conceptualized and built entirely through natural language and AI-assisted development. Features a Modern UI, Custom Audio Player with persistent state, Custom Playlists, and Robust Search. Built with React, TailwindCSS, Node.js, and TanStack React Query.',
+    logo: '/logos/antigravity.png',
+    link: '/Final%20Post.mp4',
+    linkLabel: 'Video Demo',
+    slug: 'audiowave',
+  },
 ];

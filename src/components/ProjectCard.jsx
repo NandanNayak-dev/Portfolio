@@ -30,14 +30,20 @@ const ProjectCard = ({ project, index }) => {
         </div>
 
         <div className={styles.action}>
-          <a href={project.link} target="_blank" rel="noopener noreferrer" className={styles.link}>
-            View Project
-            <VscLinkExternal size={12} />
-          </a>
+          {project.link && (
+            <a href={project.link} target="_blank" rel="noopener noreferrer" className={styles.link}>
+              {project.linkLabel || 'View Project'}
+              <VscLinkExternal size={12} />
+            </a>
+          )}
           {project.secondaryLink && (
             <a href={project.secondaryLink} target="_blank" rel="noopener noreferrer" className={styles.link} style={{marginLeft: '16px'}}>
               {project.secondaryLinkLabel || 'Secondary Link'}
-              <VscLinkExternal size={12} />
+              {project.secondaryIcon ? (
+                <img src={project.secondaryIcon} width={14} height={14} alt="icon" style={{filter: 'brightness(0) invert(1)', opacity: 0.8}} />
+              ) : (
+                <VscLinkExternal size={12} />
+              )}
             </a>
           )}
         </div>
